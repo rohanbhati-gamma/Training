@@ -3,8 +3,7 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv()
-API_KEY = os.getenv("WEATHER_API_KEY")
-
+API_KEY = 'b235b41228a5244d6d9fe43a90818e8b'
 def get_weather_data(city):
     url = f"http://api.weatherstack.com/current?access_key={API_KEY}&query={city}"
     response = requests.get(url)
